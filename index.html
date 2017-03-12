@@ -95,10 +95,16 @@ AFRAME.registerComponent('set-image', {
          <img id="artisan" crossorigin="anonymous" src="artisan.vr.jpg" alt="Artisans at Kivuli">
          <img id="kivulifab" crossorigin="anonymous" src="kivuli.vr.jpg" alt="Kivuli Fab Lab">
          <img id="parking" crossorigin="anonymous" src="kivuliparking.vr.jpg" alt="Explore Kivuli"> 
+         
+         <img id="welcome" crossorigin="anonymous" src="kivulicenter.jpg" alt="The Community">
+         <img id="fablab" crossorigin="anonymous" src="fablab.vr.jpg" alt="Welcome to Fablab Kivuli">
         <!--<img id="city" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/city.jpg">-->
-        <img id="city-thumb" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-city.jpg">
-        <img id="cubes-thumb" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-cubes.jpg">
-        <img id="sechelt-thumb" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-sechelt.jpg">
+        <img id="artsan-thumb" crossorigin="anonymous" src="artisanthumb.png">
+        <img id="kivulifab-thumb" crossorigin="anonymous" src="kivulithumb.png">
+        <img id="parking-thumb" crossorigin="anonymous" src="kivuliparkingthumb.png">
+        
+        <img id="welcome-thumb" crossorigin="anonymous" src="kivulicenterthumb.png">
+        <img id="fablab-thumb" crossorigin="anonymous" src="fablabthumb.png">
         <audio id="click-sound" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg"></audio>
         <!--<img id="cubes" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/cubes.jpg">
         <img id="sechelt" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/sechelt.jpg">-->
@@ -122,9 +128,12 @@ AFRAME.registerComponent('set-image', {
 
       <!-- Image links. -->
       <a-entity id="links" layout="type: line; margin: 1.5" position="-3 -1 -4">
-        <a-entity template="src: #link" data-src="#artisan" data-thumb="#cubes-thumb"></a-entity>
-        <a-entity template="src: #link" data-src="#kivulifab" data-thumb="#city-thumb"></a-entity>
-        <a-entity template="src: #link" data-src="#parking" data-thumb="#sechelt-thumb"></a-entity>
+        <a-entity template="src: #link" data-src="#artisan" data-thumb="#artisan-thumb"></a-entity>
+        <a-entity template="src: #link" data-src="#kivulifab" data-thumb="#kivulifab-thumb"></a-entity>
+        <a-entity template="src: #link" data-src="#parking" data-thumb="#parking-thumb"></a-entity>
+        
+        <a-entity template="src: #link" data-src="#welcome" data-thumb="#welcome-thumb"></a-entity>
+        <a-entity template="src: #link" data-src="#fablab" data-thumb="#fablab-thumb"></a-entity>
       </a-entity>
 
       <!-- Camera + cursor. -->
